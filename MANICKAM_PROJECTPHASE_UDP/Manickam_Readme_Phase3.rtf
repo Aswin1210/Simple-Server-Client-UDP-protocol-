@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28600\viewh15340\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Network Design \
+Project Phase 3: Implement RDT 2.2 over an unreliable UDP channel with bit-errors\
+Team Members: Aswin Kumar Manickam\
+\
+File Submitted:\
+	1. Server.py\
+	2. Client.py\
+	3. Globals.py\
+	4. Functions.py\
+	5. Send_Receive.py\
+	6. Lion.jpg\
+\
+Purpose of Each file:\
+	1. Server.py has the main program for the server to receive a file.\
+	2. Client.py has the main program for the client to send a file.\
+	3. Globals.py has the common variables for both server and client.\
+	4. Functions.py has the functions for checksum, file size, number of time loop has to run, Bit-error condition, data corruption, make packet, extracting packet.\
+	5. Send_Receive.py has the RDT protocol for server and client to send/receive file with sequence number, checksum along with the data.\
+	6. Lion.jpg is the image file for transmission.\
+Program Execution:\
+	BIT-ERROR\
+	1. There is an variable E_prob which the error probability in the server side and client side.\
+	2. Error probability in the SERVER side refers to the DATA-corruption. (Set E_prob in server side alone if you need to see only data corruption.)\
+	3. Error probability in the CLIENT side refers to the ACK-corruption.	(Set E_prob in client side alone if you need to see only Ack corruption.)\
+	4. Set E_Prob from minimum of 0 (No-error) to maximum of 99 (99% chance of corrupting the data).\
+\
+	After Bit_Error value is given \
+	1. Run Server.py first.\
+	2. Run Client.py next and you can see file transfer starts.\
+	3. Check Server.py console again to make sure data has been transferred successfully.\
+	Note: Execution time \'91start-time\'92 is given in global variable.\
+}
